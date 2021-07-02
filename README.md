@@ -4,4 +4,4 @@ Nice design of a responsive restaurant website 🥗 . Built using React and Styl
 
 # Live Demo
 
-https://mummymo.web.app
+https://mummymo-kitchen.web.app
