@@ -4,6 +4,7 @@ import ImgBg from '../../images/herobg.jpg'
 export const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
     url(${ImgBg});
+  width: 100vw;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -40,11 +41,23 @@ export const HeroH1 = styled.h1`
   margin-bottom: 1rem;
   box-shadow: 3px 5px #e9ba23;
   letter-spacing: 3px;
+  overflow: hidden;
+
+  @media screen and (max-width: 400px) {
+    font-size: 2rem;
+  }
 `
 
 export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
+  font-weight: normal;
+  overflow: hidden;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+    font-weight: normal;
+  }
 `
 
 export const HeroBtn = styled.button`
@@ -60,5 +73,11 @@ export const HeroBtn = styled.button`
     transition: 0.2s ease-out;
     cursor: pointer;
     color: #000;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: .85rem;
+    padding: .75rem 2rem;
+    align-self: center;
   }
 `

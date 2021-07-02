@@ -32,11 +32,19 @@ export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   margin-bottom: 5rem;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const ProductTitle = styled.h2`
   font-weight: 400;
   font-size: 1.5rem;
+
+  @media screen and (max-width: 400px) {
+    font-size: 1.2rem;
+  }
 `
 
 export const ProductInfo = styled.div`
@@ -46,6 +54,10 @@ export const ProductInfo = styled.div`
   align-items: center;
   padding: 2rem;
   text-align: center;
+
+  @media screen and (max-width: 400px) {
+    font-size: .75rem;
+  }
 `
 
 export const ProductDesc = styled.p`
@@ -65,5 +77,11 @@ export const ProductButton = styled.button`
     transition: 0.2s ease-in-out;
     cursor: pointer;
     color: #000;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: .85rem;
+    padding: .75rem 2rem;
+    align-self: center;
   }
 `

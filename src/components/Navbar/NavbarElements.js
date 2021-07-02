@@ -21,8 +21,9 @@ export const NavLink = styled(Link)`
 
   @media screen and (max-width: 400px) {
     position: absolute;
-    top: 10px;
+    top: 20px;
     left: 25px;
+    font-size: 1.5rem;
   }
 `
 
@@ -38,6 +39,14 @@ export const NavIcon = styled.div`
 		transform: translate(-130%, 100%);
 		font-weight: bold;
 	}
+
+  @media screen and (max-width: 400px) {
+    font-size: 1rem;
+  }
+
+  p {
+    font-weight: normal;
+  }
 `
 
 export const Bars = styled(Mummy)`

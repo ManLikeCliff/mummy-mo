@@ -13,6 +13,7 @@ export const SidebarContainer = styled.aside`
   top: 0;
   transition: 0.3s ease-in-out;
   right: ${({ isOpen }) => (isOpen ? '0' : '-1000px') };
+  overflow-x: hidden;
   
   @media screen and (max-width: 400px) {
     width: 100%;
